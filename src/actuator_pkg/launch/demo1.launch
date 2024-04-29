@@ -1,0 +1,9 @@
+<!-- launch文件要在软件包的目录下，但是在哪个软件包没有要求，可以不在节点所在的包下 -->
+<launch>
+    <!-- 第1级块都是节点 -->
+    <!-- node标签要最后打上/ -->
+    <node pkg="sensor_pkg" type="chaoshengbo_node" name="chaoshengbo_node"/>
+    <node pkg="sensor_pkg" type="copytest_node" name="copytest_node"/>
+    <node pkg="actuator_pkg" type="mada_node" name="mada_node" output="screen"/>
+
+</launch>
